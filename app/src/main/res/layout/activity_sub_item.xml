@@ -9,7 +9,7 @@
         android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Skateway Status"
+        android:text="Product Detaile"
         android:textAlignment="center"
         android:textSize="30dp"
         android:textStyle="bold" />

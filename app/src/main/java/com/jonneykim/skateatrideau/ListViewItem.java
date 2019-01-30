@@ -1,35 +1,50 @@
 package com.jonneykim.skateatrideau;
 
 public class ListViewItem {
-    String title, date;
-    public ListViewItem(String title, String date) {
-        this.title = title;
-        this.date = date;
+    String fromTo, status, maintTime, maintType, title, date;
+    public ListViewItem(String fromtTo, String status, String maintTime, String maintType) {
+        this.fromTo = fromtTo;
+        this.status = status;
+        this.maintTime = maintTime;
+        this.maintType = maintType;
     }
 
-    public String getTitle() {
-        return title;
+    public String getFromTo() {
+        return fromTo;
     }
 
-    public String getDate() {
-        return date;
+    public String getStatus() {
+        return status;
     }
 
-
-    public void setTitle(String title) {
-        this.title = title;
+    public String getMaintTime() {
+        return maintTime;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public String getMaintType() {return maintType;}
+
+    public void setFromTo(String s) {
+        this.fromTo=s;
     }
 
+    public void setStatus(String s) {
+        this.status = s;
+    }
 
+    public void setMaintTime(String s) {
+        this.maintTime = s;
+    }
+
+    public void setMaintType(String s) {this.maintType = s;}
 
     @Override
     public String toString() {
         return "ListViewItem{" +
-                "title='" + title + '\'' +
+                "fromTo='" + fromTo + '\'' +
+                ", status='" + status + '\'' +
+                ", maintTime='" + maintTime + '\'' +
+                ", maintType='" + maintType + '\'' +
+                ", title='" + title + '\'' +
                 ", date='" + date + '\'' +
                 '}';
     }

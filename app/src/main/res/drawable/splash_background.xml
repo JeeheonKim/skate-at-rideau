@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:top="0dp">
+    <item android:gravity="center">
         <bitmap android:src="@drawable/rideau_background"
-            android:gravity="center|bottom|clip_vertical"/>
+
+            android:gravity="center|bottom|clip_vertical|fill_vertical"/>
     </item>
     <item android:drawable="@drawable/splash_base"/>
 

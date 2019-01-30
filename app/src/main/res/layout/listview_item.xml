@@ -14,7 +14,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="title"
+            android:text="FromTo"
             android:textSize="30dp"
             android:textColor="@color/colorPrimaryDark"/>
         <TextView
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="updated date"
+            android:text="Status"
             android:textSize="24dp"
             android:textColor="@android:color/holo_orange_dark"/>
 

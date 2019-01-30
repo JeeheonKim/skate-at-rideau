@@ -12,7 +12,7 @@
         android:text="Skateway Status"
         android:textAlignment="center"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold" />z
 
     <ListView
         android:id="@+id/listView"

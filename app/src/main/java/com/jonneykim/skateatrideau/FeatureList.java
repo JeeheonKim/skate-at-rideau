@@ -8,5 +8,4 @@ public class FeatureList {
     Crs crs;
     ArrayList<FeatureItem> features;
 
-    ArrayList<FeatureItem> custom_collections = new ArrayList<FeatureItem>();
 }

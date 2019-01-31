@@ -19,4 +19,9 @@ public class RinkProperty {
     String Longueur;
     long Shape_Area;
     long Shape_Length;
+    //General
+    String General_Notice;
+    String Avis_General;
+    String Notice_Status;
+    String Notice_Status_FR;
 }

@@ -2,10 +2,8 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:gravity="center">
         <bitmap android:src="@drawable/rideau_background"
-
             android:gravity="center|bottom|clip_vertical|fill_vertical"/>
     </item>
-    <item android:drawable="@drawable/splash_base"/>
-
+    <item android:drawable="@drawable/splash_base" />
 
 </layer-list>

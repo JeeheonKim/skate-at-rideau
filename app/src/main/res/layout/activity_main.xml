@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
     <TextView
-        android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Skateway Status"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textStyle="bold" />z
-
-    <ListView
-        android:id="@+id/listView"
+        android:background="@android:color/holo_blue_light"
+        android:text="GENERAL NOTICE"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="48dp" />
+        android:layout_height="200dp"
+        android:translationY="-20dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="20dp" />
+    </ScrollView>
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/holo_red_dark"
+        android:text="SKATEWAY STATUS"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+    <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp" />
+
+</LinearLayout>

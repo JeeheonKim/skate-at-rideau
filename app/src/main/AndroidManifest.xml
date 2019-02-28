@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -26,6 +27,8 @@
         <activity android:name=".subActivity"
             android:label="subActivity"
             android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+
+
 
     </application>
 

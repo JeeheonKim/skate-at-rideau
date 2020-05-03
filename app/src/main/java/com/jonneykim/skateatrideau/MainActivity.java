@@ -56,10 +56,6 @@ import java.util.Map;
  */
 
 
-
-
-// TODO General  Notice JSON
-// TODO tells the user that about the internet connection
 // Updat
 // TODO where is my nearest stair?
 
@@ -80,16 +76,17 @@ public class MainActivity extends AppCompatActivity {
         textView3 = (TextView) findViewById(R.id.textView3);
         listView = findViewById(R.id.listView);
         adapter = new ListViewAdapter();
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
 
-                }
-                return false;
-            }
-        });
+//        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.n);
+//        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+//                switch (menuItem.getItemId()){
+//
+//                }
+//                return false;
+//            }
+//        });
 
         if (AppHelper.requestQueue == null) {
             AppHelper.requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -187,16 +184,17 @@ public class MainActivity extends AppCompatActivity {
 
             listView.setAdapter(adapter);
 
+            //TODO: When the list item is clicked, give more updates
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     ListViewItem item = (com.jonneykim.skateatrideau.ListViewItem) adapter.getItem(position);
-                    Toast.makeText(getApplicationContext(), "Selected: "+item.fromTo, Toast.LENGTH_LONG ).show();
-                    Intent intent = new Intent(getApplicationContext(), subActivity.class);
-                    intent.putExtra("id", customFeatures.get(position).id);
+                    Toast.makeText(getApplicationContext(), "Additional information will be available for "+item.fromTo + " later", Toast.LENGTH_LONG ).show();
+                    //Intent intent = new Intent(getApplicationContext(), subActivity.class);
+                    //intent.putExtra("id", customFeatures.get(position).id);
 
 
-                    startActivityForResult(intent,101);
+                    //startActivityForResult(intent,101);
                 }
             });
 
@@ -206,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(featureList !=null){
             customFeatures = featureList.features;
-            String generalNotice = featureList.features.get(0).properties.General_Notice;
+            String generalNotice = "\uD83D\uDCE2  "+featureList.features.get(0).properties.General_Notice;
             if (generalNotice!=null) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                     textView3.setText(Html.fromHtml(generalNotice, Html.FROM_HTML_MODE_COMPACT));

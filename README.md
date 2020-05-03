@@ -1,4 +1,5 @@
 # Skate At Rideau
-### Check Ottawa's largest outdoor skateway conditions!
+### Check out world's largest outdoor skateway!
+This is an Android application that tells users about conditions of skateway at Ottawa Rideau Canal.
 
-Android application that tells users about conditions of skateway at Ottawa Rideau Canal
+
